@@ -49,9 +49,11 @@ class AddTodoState extends State<AddTodo> {
               child: Padding(
                 padding: const EdgeInsets.only(left: 20),
                 child: TextField(
-                    decoration: const InputDecoration(
-                        contentPadding: EdgeInsets.only(left: 20)),
-                    controller: textEditingController),
+                  decoration: const InputDecoration(
+                      hintText: 'Lägg till en ny aktivitet',
+                      contentPadding: EdgeInsets.only(left: 20)),
+                  controller: textEditingController,
+                ),
               )),
         ));
   }
